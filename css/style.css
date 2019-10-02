@@ -1,5 +1,5 @@
 body {
-	background: #FAEBD7 url('../images/decor-flatlay-from-above-1470171.jpg');
+	background: #FFF;
 	color: black;
 	background-repeat: no-repeat;
   	background-size: 120%;
@@ -16,17 +16,22 @@ p {
 
 a:hover { color: Tomato; }
 
-header, nav, main, footer {
+nav {
+	width: 100%;
+}
+
+header, main, footer {
 	width: 80%;
 	margin: auto;
+	background-image: url('../images/decor-flatlay-from-above-1470171.jpg')
 }
 
 
 /* Header styles */
 header { 
-	//background-color: rgb(7, 171, 131);
-	color: black;
-	min-height: 100px;
+	
+	color: #1f4731;
+	min-height: 9px;
 	margin-top: 120px;
 	margin-bottom: 70px;
 }
@@ -39,11 +44,17 @@ header h1 {
 	text-decoration: underline;
 }
 
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	padding-top: 10px;
+	text-align: center;
+	color: #1f4731;
+}
 
 /* Nav styles */
 nav { 
 	background-color: rgb(7, 171, 131); 
-	opacity:0.5;}
+	opacity:0.75;}
 nav ul { 
 	display: flex;
 	justify-content: center;
@@ -58,8 +69,9 @@ nav a:hover { color: tomato; }
 main { 
 	background-color: white;
 	display: grid;
-	grid-template-columns: 60% 40%;
+	grid-template-columns: 50% 50%;
 	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
 }
 
 section {
@@ -70,6 +82,12 @@ section ul, aside ul {
 	list-style-type: square;
 	margin-top: 20px; 
 	margin-left: 30px;
+	font-size: 15px;
+}
+
+img {
+  width: 70%;
+  height: auto;
 }
 
 aside {
@@ -77,12 +95,17 @@ aside {
 }
 
 
+
 /* Footer styles */
 footer { 
 	background-color: rgb(7, 171, 131);
 	color: white;
 	text-align: center;
+	opacity:0.5;
+	position: fixed;
+ 	bottom: 0;
+ 	width: 100%;
 
  }
  footer p { 
- 	padding: 10px;}
+ 	padding: 8px;}
