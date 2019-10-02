@@ -1,11 +1,17 @@
 body {
-	background: #FAEBD7 url('../images/vintage-concrete.png');
-	color: #333;
+	background: #FAEBD7 url('../images/decor-flatlay-from-above-1470171.jpg');
+	color: black;
+	background-repeat: no-repeat;
+  	background-size: 120%;
 }
 
 a {
 	text-decoration: none;
 	color: #333;
+}
+
+p {
+	font-size: 8pt;
 }
 
 a:hover { color: Tomato; }
@@ -18,33 +24,42 @@ header, nav, main, footer {
 
 /* Header styles */
 header { 
-	background-color: #000;
-	color: BlanchedAlmond;
+	//background-color: rgb(7, 171, 131);
+	color: black;
 	min-height: 100px;
-	margin-top: 60px;
+	margin-top: 120px;
+	margin-bottom: 70px;
 }
 
 header h1 {
-	padding: 40px 60px;
+	padding: 10px 10px;
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+	font-size: 40pt;
+	text-decoration: underline;
 }
 
 
 /* Nav styles */
-nav { background-color: #333; }
+nav { 
+	background-color: rgb(7, 171, 131); 
+	opacity:0.5;}
 nav ul { 
 	display: flex;
-	justify-content: flex-end;
-}
-nav li { padding: 10px 10px; }
-nav a { color: BlanchedAlmond; }
-nav a:hover { color: white; }
+	justify-content: center;
+	font-family: 'Montserrat', sans-serif;
 
+}
+nav li { padding: 20px 10px; }
+nav a { color: white; }
+nav a:hover { color: tomato; }
 
 /* Main styles */
 main { 
-	background-color: #fff;
+	background-color: white;
 	display: grid;
 	grid-template-columns: 60% 40%;
+	font-family: 'Montserrat', sans-serif;
 }
 
 section {
@@ -62,11 +77,12 @@ aside {
 }
 
 
-
 /* Footer styles */
 footer { 
-	background-color: #000;
+	background-color: rgb(7, 171, 131);
 	color: white;
 	text-align: center;
+
  }
- footer p { padding: 20px; }
+ footer p { 
+ 	padding: 10px;}
