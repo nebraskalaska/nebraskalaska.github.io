@@ -3,6 +3,7 @@ body {
 	color: black;
 	background-repeat: no-repeat;
   	background-size: 120%;
+  	background-image: url('../images/decor-flatlay-from-above-1470171.jpg');
 }
 
 a {
@@ -20,12 +21,15 @@ nav {
 	width: 100%;
 }
 
-header, main, footer {
+header {
 	width: 80%;
 	margin: auto;
-	background-image: url('../images/decor-flatlay-from-above-1470171.jpg')
 }
 
+main, footer {
+	width: 80%;
+	margin: auto;
+}
 
 /* Header styles */
 header { 
