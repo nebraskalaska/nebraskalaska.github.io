@@ -1,115 +1,59 @@
+
 body {
-	background: #FFF;
-	color: black;
-	background-repeat: no-repeat;
-  	background-size: 120%;
-  	background-image: url('../images/decor-flatlay-from-above-1470171.jpg');
+	background: #FCFCFC;
+	color: #202020;
+	box-sizing: border-box;
 }
 
-a {
-	text-decoration: none;
-	color: #333;
+.header p {
+	padding: 100px 0px 0px 80px;
 }
 
 p {
-	font-size: 8pt;
-}
-
-a:hover { color: Tomato; }
-
-nav {
-	width: 100%;
-}
-
-header {
-	width: 80%;
-	margin: auto;
-}
-
-main, footer {
-	width: 80%;
-	margin: auto;
-}
-
-/* Header styles */
-header { 
-	
-	color: #1f4731;
-	min-height: 9px;
-	margin-top: 120px;
-	margin-bottom: 70px;
-}
-
-header h1 {
-	padding: 10px 10px;
-	font-family: 'Playfair Display', serif;
-	text-align: center;
-	font-size: 40pt;
-	text-decoration: underline;
+	font-family: 'EB Garamond', serif;
+	font-size: 16px;
+	line-height: 20px;
 }
 
 h2 {
-	font-family: 'Montserrat', sans-serif;
-	padding-top: 10px;
-	text-align: center;
-	color: #1f4731;
-}
-
-/* Nav styles */
-nav { 
-	background-color: rgb(7, 171, 131); 
-	opacity:0.75;}
-nav ul { 
-	display: flex;
-	justify-content: center;
-	font-family: 'Montserrat', sans-serif;
-
-}
-nav li { padding: 20px 10px; }
-nav a { color: white; }
-nav a:hover { color: tomato; }
-
-/* Main styles */
-main { 
-	background-color: white;
-	display: grid;
-	grid-template-columns: 50% 50%;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 20px;
-}
-
-section {
-	padding: 40px 60px;
-}
-
-section ul, aside ul {
-	list-style-type: square;
-	margin-top: 20px; 
-	margin-left: 30px;
+	font-family: 'Quicksand', sans-serif;
 	font-size: 15px;
+	padding-bottom: 5px;
+}
+
+ul {
+  text-decoration: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "Header Header Header Header" "Left Middle Media Media" "Left Middle Media Media";
+}
+
+.Header { 
+	grid-area: Header; }
+
+.Left { 
+	grid-area: Left; 
+	padding: 0px 60px 0px 80px;
+}
+
+.Middle { 
+	grid-area: Middle; }
+
+.Media { 
+	grid-area: Media; }
+
+/*SLIDESHOW*/
+
+.mySlides {
+	display:none;
 }
 
 img {
-  width: 70%;
-  height: auto;
+  object-fit: cover;
+  width:700px;
+  height:350px;
 }
-
-aside {
-	padding: 40px 10px;
-}
-
-
-
-/* Footer styles */
-footer { 
-	background-color: rgb(7, 171, 131);
-	color: white;
-	text-align: center;
-	opacity:0.5;
-	position: fixed;
- 	bottom: 0;
- 	width: 100%;
-
- }
- footer p { 
- 	padding: 8px;}

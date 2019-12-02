@@ -1,54 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Kris Blackmore</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<title>Kris Blackmore</title>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link href="https://fonts.googleapis.com/css?family=EB+Garamond|Quicksand&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/style.css">
+<link src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" rel="stylesheet">
+<link rel="stylesheet" href="../lib/w3.css">
 </head>
+
 <body>
-	<nav>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="#">Contact</a></li>
-		</ul>
-	</nav>
-	<header>
-		<h1>Kris Blackmore</h1>
-		<h2>Projects & Resources for Interactive Media | DES 341</h2>
-	</header>
-	
-	<main>
-		<section>
-			<h3>Project One</h3>
-			<p><br>This is the description for project one.</p>
-		</section>
-		<aside>
-				<img src="images/coming_soon.jpg">
-			</ul>
-		</aside>
-		<section>
-			<h3>Inspiration</h3>
-			<ul>
-				<li><a href="#">link</a></li>
-				<li><a href="#">link</a></li>
-				<li><a href="#">link</a></li>
-			</ul>
-		</section>
-		<aside>
-			<h3>Resources</h3>
-			<ul>
-				<li><a href="#">link</a></li>
-				<li><a href="#">link</a></li>
-				<li><a href="#">link</a></li>
-			</ul>
-		</aside>
-	</main>
-	<footer>
-		<p>&copy; Kris Blackmore</p>
-	</footer>
+
+<div class="grid-container">
+
+  <div class="header"> 
+    <p>Kris Blackmore</p> 
+  </div><!--END HEADER-->
+
+  <div class="Left">
+    <p>Designer, artist, and urbanist based in Portland, Oregon. <br><br> I research and make work about the public realm, gender, the enviornment, and technology. <br><br> Available for freelance. <br><br> <a href="https:www.midgray.org">midgray.org</a> <br> kristenblackmore@gmail.com </p>
+  </div><!--END LEFT-->
+
+  <div class="Middle"><h2>Select Work</h2>
+    <ul>
+      <p>> Disjecta</p>
+      <p>> League of Lady Cyclists</p>
+      <p>> Hold That Task. This Is On.</p>
+      <p>> E_Waste</p>
+      <p>> The Space Blanket Project</p>
+      <p>> traaaaash.club</p>
+    </ul>
+  </div><!--END MIDDLE-->
+
+
+  <div class="Media">
+    <div class="w3-content w3-section" style="max-width:500px" "max-height:270px">
+      <img class="mySlides" src="./images/llc.png" style="width:100%">
+      <img class="mySlides" src="./images/disjecta.png" style="width:100%">
+      <img class="mySlides" src="./images/llc.png" style="width:100%">
+    </div>
+  </div><!--END MEDIA-->
+
+</div><!--END CONTAINER-->
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
 </body>
+
 </html>
