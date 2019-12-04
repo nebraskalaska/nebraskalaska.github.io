@@ -5,8 +5,15 @@ body {
 	box-sizing: border-box;
 }
 
-.header p {
-	padding: 100px 0px 0px 80px;
+h1 {
+	font-family: 'EB Garamond', serif;
+	font-size: 2.2em;
+}
+
+h2 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 15px;
+	padding-bottom: 5px;
 }
 
 p {
@@ -15,10 +22,8 @@ p {
 	line-height: 20px;
 }
 
-h2 {
-	font-family: 'Quicksand', sans-serif;
-	font-size: 15px;
-	padding-bottom: 5px;
+.header p {
+	padding: 100px 0px 0px 80px;
 }
 
 ul {
@@ -33,7 +38,8 @@ ul {
 }
 
 .Header { 
-	grid-area: Header; }
+	grid-area: Header; 
+}
 
 .Left { 
 	grid-area: Left; 
@@ -41,10 +47,17 @@ ul {
 }
 
 .Middle { 
-	grid-area: Middle; }
+	grid-area: Middle; 
+	padding: 2px 60px 0px 0px;
+}
+
+.Middle a {
+	text-decoration: none;
+}
 
 .Media { 
-	grid-area: Media; }
+	grid-area: Media; 
+}
 
 /*SLIDESHOW*/
 
@@ -52,8 +65,55 @@ ul {
 	display:none;
 }
 
+.w3-content, w3-section {
+		padding-right: 90px;
+}
+
 img {
   object-fit: cover;
   width:700px;
   height:350px;
+}
+
+/*PORTFOLIO PAGES*/
+
+.portfolio-container {
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  backface-visibility: hidden;
+  will-change: overflow;
+}
+
+.portfolio-about,
+.portfolio-images {
+  overflow: auto;
+  height: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+}
+
+.portfolio-about::-webkit-scrollbar,
+.portfolio-images::-webkit-scrollbar {
+  display: none;
+}
+
+.portfolio-about {
+  width: 20rem;
+  padding: 10px 0px 0px 20px;
+}
+
+.portfolio-images {
+  width: 80rem;
+  padding: 70px 0px 0px 40px;
+}
+
+.portfolio-about-text {
+  padding: 60px 0px 0px 40px;
+}
+
+.portfolio-about-header {
+  padding: 0px 0px 40px 0px;
 }
